@@ -1,2 +1,3 @@
-# oldschool
-OS
+# OldSchool
+
+The OS for vintage product.
