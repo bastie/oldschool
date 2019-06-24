@@ -36,3 +36,10 @@ cd /usr/src
 # build and install
 make -j 8 TARGET=amd64 TARGET_ARCH=amd64 buildworld buildkernel installkernel installworld
 
+# go to release dir
+cd /usr/src/release
+
+# create release media under /usr/obj/usr/src/amd64.amd64/release/
+make -DNOPORTS -DNODOC -DNOSRC -DSRC_UPDATE_SKIP -DDOC_UPDATE_SKIP -DPORTS_UPDATE_SKIP -DWITH_DVD cdrom
+
+### EOF
