@@ -23,6 +23,10 @@
 # POSSIBILITY OF SUCH DAMAGE.
 #
 
+# first get this file from github and start it with
+# fetch --no-verify-peer https://raw.githubusercontent.com/bastie/oldschool/master/scripts/createOS.sh
+# sh ./createOS.sh
+
 # go to my user dir
 cd
 
