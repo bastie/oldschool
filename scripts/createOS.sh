@@ -34,6 +34,9 @@ cd
 # Release 12.0
 svnlite checkout https://svn.freebsd.org/base/releng/12.0 /usr/src
 
+# patch the sources
+. ./01.os.config.keymaps.sh   # include script to change supported keymaps  
+
 # go to src dir
 cd /usr/src
 
