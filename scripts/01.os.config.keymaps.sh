@@ -32,7 +32,7 @@ cat /usr/src/share/vt/keymaps/INDEX.keymaps | egrep "^(MENU|FONT|#|macbook|de)" 
 cp /tmp/os.INDEX.keymaps /usr/src/share/vt/keymaps/INDEX.keymaps
 
 ## (1.3) change Makefile
-cat /usr/src/share/vt/keymaps/Makefile | egrep "^(.include|FILESDIR|FILES|#)|de.|macbook" >/tmp/os.Makefile.vt.keymaps
+cat /usr/src/share/vt/keymaps/Makefile | egrep "^(.include|FILESDIR|FILES|#)|de.|macbook|^\s*$" >/tmp/os.Makefile.vt.keymaps
 cp /tmp/os.Makefile.vt.keymaps /usr/src/share/vt/keymaps/Makefile
 
 ### EOF
