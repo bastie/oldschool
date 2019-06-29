@@ -32,7 +32,7 @@ cd
 
 # get sources from FreeBSD
 # Release 12.0
-svnlite checkout https://svn.freebsd.org/base/releng/12.0 /usr/src
+svnlite checkout --non-interactive --trust-server-cert https://svn.freebsd.org/base/releng/12.0 /usr/src
 
 # patch the sources
 . ./01.os.config.keymaps.sh   # include script to change supported keymaps  
