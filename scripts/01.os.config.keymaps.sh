@@ -28,7 +28,7 @@
 ls /usr/src/share/vt/keymaps/* | grep -v "Makefile" | grep -v "INDEX" | grep -v "macbook" | grep -v "/de" | xargs rm -f 
 
 ## (1.2) change INDEX.keymaps with new selection of keymaps (and without outcommented uk keymaps)
-cat /usr/src/share/vt/keymaps/INDEX.keymaps | egrep "^(MENU|FONT|#|macbook|de)" | grep -v ^#uk >/tmp/os.INDEX.keymaps
+cat /usr/src/share/vt/keymaps/INDEX.keymaps | egrep "^(MENU|FONT|#|de)|macbook" | grep -v ^#uk >/tmp/os.INDEX.keymaps
 cp /tmp/os.INDEX.keymaps /usr/src/share/vt/keymaps/INDEX.keymaps
 
 ## (1.3) change Makefile
